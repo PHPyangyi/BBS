@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+if (!!$rows = fetchArray("SELECT tg_username,tg_uniqid,tg_level FROM tg_user
+WHERE tg_username='{$clean['username']}'
+AND tg_password='{$clean['password']}'
+AND tg_active='' LIMIT 1"))
+{
+query("UPDATE ta_user SET
+tg_last_time=NOW(),
+tg_last_ip='{$_SERVER["REMOTE_ADDR"]}',
+tg_login_count=tg_login_count+1
+WHERE
+tg_username='{$rows['tg_username']}'
+");
+mysqlClose();
+//alertLocation(null,'member.php');
+alertBack('ok');
+} else {
+mysqlClose();
+alertLocation('用户名密码不正确或者该账户未被激活！','login.php');
+}
