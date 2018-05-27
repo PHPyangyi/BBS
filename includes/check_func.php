@@ -191,7 +191,31 @@
     }
 
 
+    //member_modify
+    function checkMemberModifyPassword ($str,$min)
+    {
+        if (!empty($str)) {
+            if (strlen($str) < $min) {
+                _alert_back('密码不得小于'.$min.'位！');
+            }
+        } else {
+            return null;
+        }
+        return sha1($str);
+    }
 
+
+
+
+
+    //message
+
+    function checkMessageContent ($str) {
+        if (mb_strlen($str,'utf-8') < 10 || mb_strlen($str,'utf-8') > 200) {
+            alertBack('短信内容不得小于10位或者大于200位！');
+        }
+        return $str;
+    }
 
 
 

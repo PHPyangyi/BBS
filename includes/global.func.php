@@ -71,16 +71,6 @@
         }
     }
 
-    //mysql_string
-    function mysqlString ($str)
-    {
-        if  (!get_magic_quotes_gpc()) {
-            return addslashes($str);
-        } else {
-            return $str;
-        }
-    }
-
     //uniqid
     function shaUniqid ()
     {
@@ -98,6 +88,29 @@
             $str=htmlspecialchars($str);
         }
 
+        return $str;
+    }
+    //过滤数据库信息
+    //mysql_string
+    function mysqlString ($str)
+    {
+        if  (!get_magic_quotes_gpc()) {
+            if (is_array($str)) {
+                foreach ($str as $key => $value) {
+                    $str[$key] = mysqlString($value);
+                }
+            }
+        } else {
+                addslashes($str);
+        }
+        return $str;
+    }
+
+    //title
+    function Title ($str) {
+        if (mb_strlen($str,'utf-8') > 14) {
+            $str = mb_substr($str,1,14,'utf-8').'...';
+        }
         return $str;
     }
 

@@ -29,7 +29,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>多用户留言系统--博友</title>
     <?php require ROOT_PATH.'includes/title.inc.php';  ?>
     <script type="text/javascript" src="js/blog.js"></script>
 </head>
