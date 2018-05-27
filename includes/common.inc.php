@@ -35,3 +35,22 @@
     connect();
     selectDb();
     setName();
+
+
+    //短信提醒
+    $_message = fetchArray("SELECT 
+																COUNT(tg_id) 
+														AS 
+																count 
+													FROM 
+																tg_message 
+												 WHERE 
+												 				tg_state=0
+												 	   AND
+												 	   			tg_touser='{$_COOKIE['username']}'
+    ");
+    if (empty($_message['count'])) {
+        $GLOBALS['message'] = '<strong class="noread"><a href="member_message.php">(0)</a></strong>';
+    } else {
+        $GLOBALS['message'] = '<strong class="read"><a href="member_message.php">('.$_message['count'].')</a></strong>';
+    }

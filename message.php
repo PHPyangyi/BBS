@@ -82,7 +82,7 @@
         <dl>
             <dd><input type="text" readonly="readonly" value="TO:<?php echo $html['touser']?>" class="text" /></dd>
             <dd><textarea name="content"></textarea></dd>
-            <dd>验 证 码：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code" /> <input type="submit" class="submit" value="发送短信" /></dd>
+            <dd>验 证 码：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /> <input type="submit" class="submit" value="发送短信" /></dd>
         </dl>
     </form>
 </div>

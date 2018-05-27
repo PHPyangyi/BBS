@@ -15,7 +15,7 @@
         <li><a href="index.php">首页&nbsp&nbsp&nbsp</a></li>
         <?php
             if (isset($_COOKIE['username'])){
-                echo '<li><a href="member.php">'.$_COOKIE['username'].'·个人中心</a></li>';
+                echo '<li><a href="member.php">'.$_COOKIE['username'].'·个人中心</a>'.$GLOBALS['message'].'</li>';
                 echo "\n";
             } else {
                 echo '<li><a href="register.php">注册</a></li>';
