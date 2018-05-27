@@ -1,146 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4807f36c-f089-4d58-a5c0-7c9911b9df54" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/active.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/code.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/active.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/basic.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/face.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/index.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/register.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m01.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m02.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m03.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m04.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m05.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m06.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m07.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m08.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m09.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/face/m64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/aricle.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/bgMenubar.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/bold.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/center.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/color.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/decrease.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/email.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/fontsize.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/help.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/image.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/increase.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/italic.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/left.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/logo1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/meg.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/member.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/movie.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/noread.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/photo.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/read.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/right.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/space.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/strikethrough.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/swf.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/underline.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/url.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/x1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/x2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/x3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/x4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/check_func.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/common.inc.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/footer.inc.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/global.func.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/header.inc.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/mysql_func.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/title.inc.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/login.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/opener.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/register.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/login.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/register.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+    <list default="true" id="4807f36c-f089-4d58-a5c0-7c9911b9df54" name="Default" comment="BBS第二天上午完成到个人中心">
+      <change beforePath="" afterPath="$PROJECT_DIR$/blog.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/blog.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/1/member.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/includes/member.inc.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/blog.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logout.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/member.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/includes/check_func.php" afterPath="$PROJECT_DIR$/includes/check_func.php" />
+      <change beforePath="$PROJECT_DIR$/includes/global.func.php" afterPath="$PROJECT_DIR$/includes/global.func.php" />
+      <change beforePath="$PROJECT_DIR$/includes/header.inc.php" afterPath="$PROJECT_DIR$/includes/header.inc.php" />
+      <change beforePath="$PROJECT_DIR$/includes/mysql_func.php" afterPath="$PROJECT_DIR$/includes/mysql_func.php" />
+      <change beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,14 +26,65 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="member.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/member.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <marker date="1527391661808" expanded="true" signature="289:696" ph="SELECT tg_us... " />
+                <marker date="1527391661808" expanded="true" signature="289:778" ph="SELECT tg_us... tg_user" />
+                <marker date="1527391661808" expanded="true" signature="289:927" ph="SELECT tg_us... tg_user" />
+                <marker date="1527391661808" expanded="true" signature="1837:1933" ph="..." />
+                <marker date="1527391661808" expanded="true" signature="1844:1933" ph="..." />
+                <marker date="1527391661808" expanded="true" signature="1976:2005" ph="..." />
+                <marker date="1527391661808" expanded="true" signature="2057:2090" ph="..." />
+                <marker date="1527391661808" expanded="true" signature="2150:2239" ph="..." />
+                <marker date="1527391661808" expanded="true" signature="2195:2239" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_func.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/mysql_func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.inc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.func.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/global.func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -179,19 +106,26 @@
         <option value="$PROJECT_DIR$/js/code.js" />
         <option value="$PROJECT_DIR$/code.php" />
         <option value="$PROJECT_DIR$/includes/common.inc.php" />
-        <option value="$PROJECT_DIR$/includes/global.func.php" />
-        <option value="$PROJECT_DIR$/includes/mysql_func.php" />
         <option value="$PROJECT_DIR$/js/register.js" />
         <option value="$PROJECT_DIR$/js/opener.js" />
         <option value="$PROJECT_DIR$/active.php" />
         <option value="$PROJECT_DIR$/css/1/active.css" />
-        <option value="$PROJECT_DIR$/includes/header.inc.php" />
         <option value="$PROJECT_DIR$/css/1/login.css" />
         <option value="$PROJECT_DIR$/js/login.js" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/includes/check_func.php" />
+        <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/includes/header.inc.php" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/js/log.js" />
+        <option value="$PROJECT_DIR$/css/1/blog.css" />
+        <option value="$PROJECT_DIR$/includes/mysql_func.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/css/1/member.css" />
+        <option value="$PROJECT_DIR$/includes/member.inc.php" />
+        <option value="$PROJECT_DIR$/member.php" />
+        <option value="$PROJECT_DIR$/includes/global.func.php" />
       </list>
     </option>
   </component>
@@ -203,10 +137,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="93" />
-    <option name="width" value="1788" />
-    <option name="height" value="928" />
+    <option name="x" value="157" />
+    <option name="y" value="119" />
+    <option name="width" value="1561" />
+    <option name="height" value="925" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -237,8 +171,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,18 +212,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527309155115</updated>
-      <workItem from="1527309158840" duration="27016000" />
+      <workItem from="1527309158840" duration="27731000" />
+      <workItem from="1527382052483" duration="9587000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27016000" />
+    <option name="totallyTimeSpent" value="37318000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="93" width="1788" height="928" extended-state="0" />
+    <frame x="157" y="119" width="1561" height="925" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15752625" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552118" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931727" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -300,11 +236,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -314,19 +250,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BBS第二天上午完成到个人中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="BBS第二天上午完成到个人中心" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/1/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="144" column="1" lean-forward="false" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/1/basic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -351,14 +285,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/1/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1/register.php" />
     <entry file="file://$PROJECT_DIR$/css/1/register.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
@@ -367,27 +294,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/1/face.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1/face.php" />
     <entry file="file://$PROJECT_DIR$/css/1/face.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -399,14 +310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/code.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/code.js" />
     <entry file="file://$PROJECT_DIR$/code.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -427,14 +331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -474,47 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/global.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/check_func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="166" column="33" lean-forward="false" selection-start-line="166" selection-start-column="33" selection-end-line="166" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <marker date="1527336716743" expanded="true" signature="641:1037" ph="SELECT tg_us... tg_user" />
-            <marker date="1527336716743" expanded="true" signature="1072:1323" ph="UPDATE ta_user... " />
-            <marker date="1527336716743" expanded="true" signature="1636:1730" ph="..." />
-            <marker date="1527336716743" expanded="true" signature="1643:1730" ph="..." />
-            <marker date="1527336716743" expanded="true" signature="1836:1865" ph="..." />
-            <marker date="1527336716743" expanded="true" signature="1915:2589" ph="..." />
-            <marker date="1527336716743" expanded="true" signature="2009:2589" ph="..." />
-            <marker date="1527336716743" expanded="true" signature="2026:2589" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/common.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -523,24 +378,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/mysql_func.php">
+    <entry file="file://$PROJECT_DIR$/css/1/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="3024">
+          <caret line="144" column="1" lean-forward="false" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="294">
+          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
           <folding>
-            <marker date="1527334368058" expanded="true" signature="1138:1163" ph="SELECT tg_us... ta_user" />
-            <marker date="1527334368058" expanded="true" signature="1138:1218" ph="SELECT tg_us... tg_user" />
-            <marker date="1527334368058" expanded="true" signature="1263:2126" ph="INSERT INTO tg_user... " />
-            <marker date="1527334368058" expanded="true" signature="1263:2231" ph="INSERT INTO tg_user... " />
+            <marker date="1527384626083" expanded="true" signature="1155:1180" ph="SELECT tg_us... ta_user" />
+            <marker date="1527384626083" expanded="true" signature="1155:1235" ph="SELECT tg_us... tg_user" />
+            <marker date="1527384626083" expanded="true" signature="1280:2143" ph="INSERT INTO tg_user... " />
+            <marker date="1527384626083" expanded="true" signature="1280:2248" ph="INSERT INTO tg_user... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/check_func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="181" column="27" lean-forward="true" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <marker date="1527390151841" expanded="true" signature="252:292" ph="SELECT COUNT... tg_user" />
+            <marker date="1527390151841" expanded="true" signature="322:545" ph="SELECT tg_id... tg_user" />
+            <marker date="1527390151841" expanded="true" signature="322:575" ph="SELECT tg_id... tg_user" />
+            <marker date="1527390151841" expanded="true" signature="322:618" ph="SELECT tg_id... tg_user" />
+            <marker date="1527390151841" expanded="true" signature="744:832" ph="..." />
+            <marker date="1527390151841" expanded="true" signature="751:832" ph="..." />
+            <marker date="1527390151841" expanded="true" signature="938:967" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1/member.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <marker date="1527390303799" expanded="true" signature="656:1155" ph="SELECT tg_us... tg_user" />
+            <marker date="1527390303799" expanded="true" signature="1190:1441" ph="UPDATE ta_user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/member.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/global.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <marker date="1527391661808" expanded="true" signature="289:696" ph="SELECT tg_us... " />
+            <marker date="1527391661808" expanded="true" signature="289:778" ph="SELECT tg_us... tg_user" />
+            <marker date="1527391661808" expanded="true" signature="289:927" ph="SELECT tg_us... tg_user" />
+            <marker date="1527391661808" expanded="true" signature="1837:1933" ph="..." />
+            <marker date="1527391661808" expanded="true" signature="1844:1933" ph="..." />
+            <marker date="1527391661808" expanded="true" signature="1976:2005" ph="..." />
+            <marker date="1527391661808" expanded="true" signature="2057:2090" ph="..." />
+            <marker date="1527391661808" expanded="true" signature="2150:2239" ph="..." />
+            <marker date="1527391661808" expanded="true" signature="2195:2239" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/mysql_func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

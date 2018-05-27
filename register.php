@@ -9,7 +9,7 @@
     define('IN_TG',true);
     define('SCRIPT','register');
     require dirname(__FILE__).'/includes/common.inc.php';
-
+    loginState();
     //POST
     if (@$_GET['action']=='register') {
         checkCode($_POST['code'],$_SESSION['code']);

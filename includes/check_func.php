@@ -167,7 +167,28 @@
         return mysqlString($str);
     }
 
-
+    //cookie
+    function SetCookies($username,$uniqid,$time)
+    {
+        switch ($time) {
+            case '0':  //浏览器进程
+                setcookie('username',$username);
+                setcookie('uniqid',$uniqid);
+                break;
+            case '1':  //一天
+                setcookie('username',$username,time()+86400);
+                setcookie('uniqid',$uniqid,time()+86400);
+                break;
+            case '2':  //一周
+                setcookie('username',$username,time()+604800);
+                setcookie('uniqid',$uniqid,time()+604800);
+                break;
+            case '3':  //一月
+                setcookie('username',$username,time()+2592000);
+                setcookie('uniqid',$uniqid,time()+2592000);
+                break;
+        }
+    }
 
 
 

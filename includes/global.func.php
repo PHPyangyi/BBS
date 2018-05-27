@@ -36,6 +36,33 @@
         }
     }
 
+    //unsession
+    function sessionDestroy ()
+    {
+        if (session_start()) {
+            session_unset();
+            session_destroy();
+        }
+    }
+
+    //uncooike
+    function unsetCookie ()
+    {
+        setcookie('username','',time()-1);
+        setcookie('uniqid','',time()-1);
+        sessionDestroy();
+        alertLocation(null,'index.php');
+    }
+
+    //判断login
+    function loginState ()
+    {
+        if (isset($_COOKIE['username'])) {
+            alertBack('登录状态无法进行本操作！');
+        }
+    }
+
+
     //check
     function checkCode ($first,$end)
     {
@@ -60,6 +87,19 @@
        return  sha1(uniqid(rand(),true));
     }
 
+    //过滤html
+    function Html ($str)
+    {
+        if (is_array($str)) {
+            foreach ($str as $key => $value) {
+                $str[$key] = Html( $value );
+            }
+        } else {
+            $str=htmlspecialchars($str);
+        }
+
+        return $str;
+    }
 
     //check code
     function code ()
@@ -99,3 +139,101 @@
         imagedestroy($img);
 
     }
+
+    //page
+    function page ($sql,$size)
+    {   //用全局取出来
+        global $page,$pagesize,$pagenum,$pageabsolute,$num;
+        //处理
+        if (isset($_GET['page'])) {
+            $page =$_GET['page'];
+            if (empty($page) || $page < 0 || !is_numeric($page)) {
+                $page = 1;
+            } else {
+                $page = intval($page);
+            }
+        } else {
+            $page = 1;
+        }
+
+        $pagesize = $size;
+        $num=query($sql);
+        $num=fetchArrayList($num);
+        $num= $num['NUM'];
+
+        $pageabsolute=ceil($num/$pagesize);
+
+        if ($num == 0) {
+            $pageabsolute = 1;
+        } else {
+            $pageabsolute = ceil($num / $pagesize);
+        }
+        if ($page > $pageabsolute) {
+            $page = $pageabsolute;
+        }
+        $pagenum = ($page - 1) * $pagesize;
+    }
+
+
+    function paging ($type)
+    {
+        global $page,$pageabsolute,$num;
+        if ($type == 1) {
+            echo '<div id="page_num">';
+            echo '<ul>';
+            for ($i=0;$i<$pageabsolute;$i++) {
+                if ($page == ($i+1)) {
+                    echo '<li><a href="'.SCRIPT.'.php?page='.($i+1).'" class="selected">'.($i+1).'</a></li>';
+                } else {
+                    echo '<li><a href="'.SCRIPT.'.php?page='.($i+1).'">'.($i+1).'</a></li>';
+                }
+            }
+            echo '</ul>';
+            echo '</div>';
+        } elseif ($type == 2) {
+            echo '<div id="page_text">';
+            echo '<ul>';
+            echo '<li>'.$page.'/'.$pageabsolute.'页 | </li>';
+            echo '<li>共有<strong>'.$num.'</strong>条数据 | </li>';
+            if ($page == 1) {
+                echo '<li>首页 | </li>';
+                echo '<li>上一页 | </li>';
+            } else {
+                echo '<li><a href="'.SCRIPT.'.php">首页</a> | </li>';
+                echo '<li><a href="'.SCRIPT.'.php?page='.($page-1).'">上一页</a> | </li>';
+            }
+            if ($page == $pageabsolute) {
+                echo '<li>下一页 | </li>';
+                echo '<li>尾页</li>';
+            } else {
+                echo '<li><a href="'.SCRIPT.'.php?page='.($page+1).'">下一页</a> | </li>';
+                echo '<li><a href="'.SCRIPT.'.php?page='.$pageabsolute.'">尾页</a></li>';
+            }
+            echo '</ul>';
+            echo '</div>';
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

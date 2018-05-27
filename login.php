@@ -9,9 +9,9 @@
     define('IN_TG',true);
     define('SCRIPT','login');
     require dirname(__FILE__).'/includes/common.inc.php';
-
+    loginState();
     if (@$_GET['action'] == 'login') {
-        //checkCode($_POST['code'],$_SESSION['code']);
+        checkCode($_POST['code'],$_SESSION['code']);
         include ROOT_PATH.'includes/check_func.php';
         $clean=array();
         $clean['username'] = checkUsername($_POST['username'],2,20);
@@ -20,6 +20,7 @@
         if (!!$rows = fetchArray("SELECT tg_username,tg_uniqid,tg_level FROM tg_user
                                                                                       WHERE tg_username='{$clean['username']}'
                                                                                       AND tg_password='{$clean['password']}'
+                                                                                      AND tg_active=''
                                                                                       LIMIT 1"))
         {
               query("UPDATE tg_user SET
@@ -29,9 +30,14 @@
 											  WHERE
 											  tg_username='{$rows['tg_username']}'
                                               ");
+
+              SetCookies($rows['tg_username'],$rows['tg_uniqid'],$clean['time']);
+              if ($rows['th_level'] == 1) {
+                  $_SESSION['admin'] = $rows['username'];
+              }
               mysqlClose();
-              //alertLocation(null,'member.php');
-            alertBack('ok');
+              alertLocation(null,'member.php');
+              //echo $_COOKIE['username'];
         } else {
             mysqlClose();
             alertLocation('用户名密码不正确或者该账户未被激活！','login.php');

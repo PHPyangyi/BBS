@@ -71,6 +71,12 @@
     }
 
 
+    function fetchArrayList ($sql)
+    {
+        return @mysql_fetch_array($sql,MYSQL_ASSOC);
+    }
+
+
 
 
 
