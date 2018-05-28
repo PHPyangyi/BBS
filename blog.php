@@ -13,7 +13,6 @@
     page("SELECT COUNT(tg_id) as NUM  FROM tg_user ",10);
 
 
-
     $result=query("SELECT 
                                 tg_id,tg_username,tg_sex,tg_face
                         FROM

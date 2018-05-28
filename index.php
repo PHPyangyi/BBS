@@ -9,6 +9,21 @@
     define('SCRIPT','index');
     require  dirname(__FILE__).'/includes/common.inc.php';
 
+    //帖子列表
+    page("SELECT COUNT(tg_id) as NUM  FROM tg_article  ",10);
+    $result=query("SELECT 
+                                *
+                        FROM
+                                tg_article
+                        WHERE  
+                                tg_reid='0'      
+                        ORDER BY
+                                tg_date DESC        
+                        LIMIT 
+                                $pagenum,$pagesize                         
+                                  
+                  ");
+
     //处理新晋会员
     //可采用xml
     $vip=fetchArray("SELECT * FROM tg_user ORDER BY  tg_reg_time DESC  LIMIT 1 ");
@@ -30,17 +45,21 @@
         <h2>帖子列表</h2>
         <a href="post.php" class="post">发表帖子</a>
         <ul class="article">
-            <li class="icon1"><em>阅读数(<strong>72</strong>) 评论数(<strong>2</strong>)</em> <a href="###">创意时代：解密QQ仙侠传美术创意设计</a></li>
-            <li class="icon2"><em>阅读数(<strong>194</strong>) 评论数(<strong>7</strong>)</em> <a href="###">天掉下馅饼《游戏人生》变装拿大奖</a></li>
-            <li class="icon3"><em>阅读数(<strong>39</strong>) 评论数(<strong>0</strong>)</em> <a href="###">格斗大作《街头霸王4》PC版即将公布</a></li>
-            <li class="icon4"><em>阅读数(<strong>46</strong>) 评论数(<strong>0</strong>)</em> <a href="###">暗黑魔幻《炼狱》4月19正式开放封测</a></li>
-            <li class="icon5"><em>阅读数(<strong>23</strong>) 评论数(<strong>0</strong>)</em> <a href="###">永恒之塔的日子有一种自豪叫做牺牲</a></li>
-            <li class="icon6"><em>阅读数(<strong>33</strong>) 评论数(<strong>0</strong>)</em> <a href="###">盘点多年以后你还刻骨铭心的十款游戏</a></li>
-            <li class="icon7"><em>阅读数(<strong>23</strong>) 评论数(<strong>0</strong>)</em> <a href="###">炫舞吧 内测火爆 引领休闲舞蹈网游</a></li>
-            <li class="icon8"><em>阅读数(<strong>22</strong>) 评论数(<strong>0</strong>)</em> <a href="###">姚仙亲自主刀 《仙剑5》剧透曝光?</a></li>
-            <li class="icon9"><em>阅读数(<strong>12</strong>) 评论数(<strong>1</strong>)</em> <a href="###">新概念战车网游《钢铁围攻》24日封测</a></li>
-            <li class="icon10"><em>阅读数(<strong>251</strong>) 评论数(<strong>3</strong>)</em> <a href="###">完美国际新副本即将推出 背景揭秘</a></li>
+            <?php
+                $htmllist = array();
+                while (!!$rows = fetchArrayList($result)) {
+                    $htmllist['id'] = $rows['tg_id'];
+                    $htmllist['type'] = $rows['tg_type'];
+                    $htmllist['readcount'] = $rows['tg_readcount'];
+                    $htmllist['commendcount'] = $rows['tg_commendcount'];
+                    $htmllist['title'] = $rows['tg_title'];
+                    $htmllist = Html($htmllist);
+                    echo '<li class="icon'.$htmllist['type'].'"><em>阅读数(<strong>'.$htmllist['readcount'].'</strong>) 评论数(<strong>'.$htmllist['commendcount'].'</strong>)</em> <a href="article.php?id='.$htmllist['id'].'">'.Title($htmllist['title'],20).'</a></li>';
+                }
+               // _free_result($_result);
+            ?>
         </ul>
+        <?php paging(2);?>
     </div>
 
     <div id="user">

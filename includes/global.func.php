@@ -190,15 +190,15 @@
 
     function paging ($type)
     {
-        global $page,$pageabsolute,$num;
-        if ($type == 1) {
+        global $page,$pageabsolute,$num,$_id;
+        if ($type == 1 ) {
             echo '<div id="page_num">';
             echo '<ul>';
             for ($i=0;$i<$pageabsolute;$i++) {
                 if ($page == ($i+1)) {
-                    echo '<li><a href="'.SCRIPT.'.php?page='.($i+1).'" class="selected">'.($i+1).'</a></li>';
+                    echo '<li><a href="'.SCRIPT.'.php?'.$_id.'page='.($i+1).'" class="selected">'.($i+1).'</a></li>';
                 } else {
-                    echo '<li><a href="'.SCRIPT.'.php?page='.($i+1).'">'.($i+1).'</a></li>';
+                    echo '<li><a href="'.SCRIPT.'.php?'.$_id.'page='.($i+1).'">'.($i+1).'</a></li>';
                 }
             }
             echo '</ul>';
@@ -226,7 +226,6 @@
             echo '</div>';
         }
     }
-
 
 
 

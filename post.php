@@ -15,7 +15,7 @@
 
     if (@$_GET['action'] == 'post') {
         include ROOT_PATH.'includes/check_func.php';
-       // checkCode($_POST['code'],$_SESSION['code']);
+        checkCode($_POST['code'],$_SESSION['code']);
         if ($rows = fetchArray("SELECT tg_uniqid FROM tg_user WHERE tg_username='{$_COOKIE['username']}'  LIMIT 1")) {
             checkUniqid($rows['tg_uniqid'],$_COOKIE['uniqid']);
             $clean = array();
