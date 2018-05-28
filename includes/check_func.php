@@ -219,6 +219,24 @@
 
 
 
+    //post
+
+    function checkPostTitle ($str,$min,$max)
+    {
+        if (mb_strlen($str,'utf-8') < $min || mb_strlen($str,'utf-8') > $max) {
+            _alert_back('帖子标题内容不得小于'.$min.'位大于'.$max.'位！');
+        }
+        return $str;
+    }
+
+    function checkPostContent ($str,$number)
+    {
+        if (mb_strlen($str,'utf-8') < $number) {
+            _alert_back('帖子内容不得小于'.$number.'位！');
+        }
+        return $str;
+    }
+
 
 
 

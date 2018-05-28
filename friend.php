@@ -10,7 +10,7 @@
     define('SCRIPT','friend');
     require dirname(__FILE__).'/includes/common.inc.php';
 
-    if (!$_COOKIE['username']) {
+    if (@!$_COOKIE['username']) {
         alertClose('请登录');
     }
 

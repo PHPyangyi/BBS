@@ -38,7 +38,8 @@
 
 
     //短信提醒
-    $_message = fetchArray("SELECT 
+    $_message =
+        @fetchArray("SELECT 
 																COUNT(tg_id) 
 														AS 
 																count 
