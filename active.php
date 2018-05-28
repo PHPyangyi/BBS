@@ -5,6 +5,7 @@
      * Date: 2018/5/26
      * Time: 19:10
      */
+    session_start();
     define('IN_TG',true);
     define('SCRIPT','active');
     require dirname(__FILE__).'/includes/common.inc.php';

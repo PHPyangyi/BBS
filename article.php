@@ -5,6 +5,7 @@
      * Date: 2018/5/28
      * Time: 11:21
      */
+    session_start();
     define('IN_TG',true);
     define('SCRIPT','article');
     require dirname(__FILE__).'/includes/common.inc.php';
@@ -77,6 +78,8 @@
                 $html['face'] = $rowsUser['tg_face'];
                 $html['email'] = $rowsUser['tg_email'];
                 $html['url'] = $rowsUser['tg_url'];
+                $html['switch'] = $rowsUser['tg_switch'];
+                $html['autograph'] = $rowsUser['tg_autograph'];
                 $html = Html($html);
 
                 global $_id;
@@ -90,6 +93,12 @@
                 if ($html['last_modify_date'] != '0000-00-00 00:00:00') {
                     $html['last_modify_date_string'] = '本贴已由['.$html['username'].']于'.$html['last_modify_date'].'修改过！';
                 }
+                //个性签名
+                //个性签名
+                if ($html['switch'] == 1) {
+                    $html['autograph_html'] = '<p class="autograph">'.$html['autograph'].'</p>';
+                }
+
 
                 //读取回帖
                 page("SELECT COUNT(tg_id) as NUM  FROM tg_article WHERE tg_reid='{$html['reid']}'",10);
@@ -129,6 +138,7 @@
     <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="ueditor/ueditor.all.min.js"> </script>
     <script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+
 </head>
 <body>
     <?php require ROOT_PATH.'includes/header.inc.php'; ?>
@@ -155,6 +165,7 @@
                 <h3>主题：<?php echo $html['title']?> <img src="images/icon<?php echo $html['type']?>.gif" alt="icon" /></h3>
                 <div class="detail">
                     <?php echo $content['content']?>
+                    <?php echo @$html['autograph_html']?>
                 </div>
                 <div class="read">
                     <p><?php echo $html['last_modify_date_string']?></p>
@@ -193,6 +204,7 @@
                 $_html = Html($_html);
             } else {
             }
+
         ?>
                 <div class="re">
                     <dl>
@@ -229,7 +241,7 @@
                 <input type="hidden" name="reid" value="<?php echo $html['reid']?>" />
                 <input type="hidden" name="type" value="<?php echo $html['type']?>" />
                 <dl>
-                    <dd>标　　题：<input type="text" name="title" class="text" value="RE:<?php echo $html['title']?>" /> (*必填，2-40位)</dd>
+                    <dd>标　　题：<input id="yangyi" type="text" name="title" class="text" value="RE:<?php echo $html['title']?>" /> (*必填，2-40位)</dd>
                     <dd>
                         <textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%; margin-left: -220px " rows="10"></textarea>
                     </dd>
@@ -253,5 +265,7 @@
         $(".btype").hide();
         $(".btype").eq(i).show();
     });
+
+
 
 </script>

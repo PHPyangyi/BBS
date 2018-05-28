@@ -12,6 +12,5 @@
          exit('error');
     }
 ?>
-<link rel="stylesheet" href="favicon.ico">
 <link rel="stylesheet" href="css/1/basic.css">
 <link rel="stylesheet" type="text/css" href="css/1/<?php echo SCRIPT?>.css" />

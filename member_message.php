@@ -5,6 +5,7 @@
      * Date: 2018/5/27
      * Time: 15:21
      */
+    session_start();
     define('IN_TG',true);
     define('SCRIPT','member_message');
     require dirname(__FILE__).'/includes/common.inc.php';

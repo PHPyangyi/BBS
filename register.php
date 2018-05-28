@@ -68,14 +68,14 @@
 
         if (affectedRow() == 1) {
             mysqlClose();
-            session_unset();
-            session_destroy();
+           // session_unset();
+           // session_destroy();
             alertLocation('恭喜你，注册成功','active.php?active='.$clean['active']);
 
         } else {
             mysqlClose();
-            session_unset();
-            session_destroy();
+            //session_unset();
+            //session_destroy();
             alertLocation('很遗憾，注册失败！','register.php');
         }
 

@@ -32,15 +32,16 @@
                                               ");
 
               SetCookies($rows['tg_username'],$rows['tg_uniqid'],$clean['time']);
-              if ($rows['th_level'] == 1) {
-                  $_SESSION['admin'] = $rows['username'];
+              if ($rows['tg_level'] == 1) {
+                  $_SESSION['admin'] = $rows['tg_username'];
               }
-              mysqlClose();
+
               alertLocation(null,'member.php');
+            mysqlClose();
               //echo $_COOKIE['username'];
         } else {
-            mysqlClose();
             alertLocation('用户名密码不正确或者该账户未被激活！','login.php');
+            mysqlClose();
         }
     }
 
