@@ -10,7 +10,7 @@
     define('SCRIPT','blog');
     require dirname(__FILE__).'/includes/common.inc.php';
 
-    page("SELECT COUNT(tg_id) as NUM  FROM tg_user ",10);
+    page("SELECT COUNT(tg_id) as NUM  FROM tg_user ",$system['blog']);
 
 
     $result=query("SELECT 
@@ -28,7 +28,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--博友</title>
+    <title><?php echo $system['webname'] ?>--博友</title>
     <?php require ROOT_PATH.'includes/title.inc.php';  ?>
     <script type="text/javascript" src="js/blog.js"></script>
 </head>

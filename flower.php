@@ -15,7 +15,9 @@
 
     if (@$_GET['action'] == 'send') {
         include ROOT_PATH.'includes/check_func.php';
-        checkCode($_POST['code'],$_SESSION['code']);
+        if (!empty($system['code'])) {
+            checkCode($_POST['code'], $_SESSION['code']);
+        }
         if ($rows = fetchArray("SELECT tg_uniqid FROM tg_user WHERE tg_username='{$_COOKIE['username']}'  LIMIT 1")) {
             checkUniqid($rows['tg_uniqid'],$_COOKIE['uniqid']);
             $clean = array();
@@ -74,7 +76,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--送花</title>
+    <title><?php echo $system['webname'] ?>--送花</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/message.js"></script>
 </head>
@@ -94,8 +96,9 @@
                         ?>
                     </select>
                 </dd>
-                <dd><textarea name="content">灰常欣赏你，送你花啦~~~</textarea></dd>
-                <dd>验 证 码：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code"  onclick="this.src='code.php?tm='+Math.random()  "/> <input type="submit" class="submit" value="送花" /></dd>
+                <?php if (!empty($system['code'])) {?>
+                    <dd>验 证 码：<input type="text" name="code" class="text code"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+                <?php }?>
             </dl>
         </form>
     </div>

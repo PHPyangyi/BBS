@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--头像选择</title>
+    <title><?php echo $system['webname'] ?>--头像选择</title>
     <?php require ROOT_PATH.'/includes/title.inc.php'  ?>
     <script type="text/javascript" src="js/opener.js"></script>
 <body>

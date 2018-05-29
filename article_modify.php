@@ -15,7 +15,9 @@
     //update
     if (@$_GET['action'] == 'modify') {
         include ROOT_PATH.'includes/check_func.php';
-        checkCode($_POST['code'],$_SESSION['code']);
+        if (!empty($system['code'])) {
+            checkCode($_POST['code'], $_SESSION['code']);
+        }
         if ($rows = fetchArray("SELECT tg_uniqid FROM tg_user WHERE tg_username='{$_COOKIE['username']}'  LIMIT 1")) {
             checkUniqid($rows['tg_uniqid'],$_COOKIE['uniqid']);
             //开始修改
@@ -88,7 +90,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>发表帖子</title>
+    <title><?php echo $system['webname'] ?>--发表帖子</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/post.js"></script>
     <script type="text/javascript" src="js/modernizr.min.js"></script>
@@ -126,7 +128,9 @@
             <dd>
                 <textarea name="content" class="common-textarea" id="content" cols="30" style="width: 98%; margin-left: -220px " rows="10"><?php echo $yang['content']?></textarea>
             </dd>
-            <dd>验 证 码：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm'+Math.random()" /> <input type="submit" class="submit" value="修改帖子" /></dd>
+            <?php if (!empty($system['code'])) {?>
+                <dd>验 证 码：<input type="text" name="code" class="text code"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+            <?php }?>
         </dl>
     </form>
 </div>

@@ -12,7 +12,12 @@
     loginState();
     //POST
     if (@$_GET['action']=='register') {
-        checkCode($_POST['code'],$_SESSION['code']);
+        if (empty($system['register'])) {
+            exit('不要非法注册！');
+        }
+    if (!empty($system['code'])) {
+        checkCode($_POST['code'], $_SESSION['code']);
+    }
         include ROOT_PATH.'includes/check_func.php';
         $clean=array();
         $clean['active'] =shaUniqid();
@@ -88,7 +93,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--注册</title>
+    <title><?php echo $system['webname'] ?>--注册</title>
     <?php require ROOT_PATH.'/includes/title.inc.php ' ?>
     <script type="text/javascript" src="js/register.js"></script>
 </head>
@@ -97,6 +102,7 @@
 
     <div id="register">
         <h2>会员注册</h2>
+        <?php if (!empty($system['register'])) {?>
         <form action="register.php?action=register" method="post" name="register">
             <input type="hidden" name="uniqid" value="<?php echo $uniqid ?>" />
             <dl>
@@ -111,10 +117,15 @@
                 <dd>电子邮件：<input type="text" name="email" class="text" /> (*必填，激活账户)</dd>
                 <dd>　Q Q 　：<input type="text" name="qq" class="text" /></dd>
                 <dd>主页地址：<input type="text" name="url" class="text" value="http://" /></dd>
-                <dd>验 证  码 ：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm'+Math.random()" /></dd>
+                <?php if (!empty($system['code'])) {?>
+                    <dd>验 证 码：<input type="text" name="code" class="text code"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+                <?php }?>
                 <dd><input type="submit" class="submit" value="注册" /></dd>
             </dl>
         </form>
+        <?php } else {
+            echo '<h4 style="text-align:center;padding:20px;">本站关闭了注册功能！</h4>';
+        }?>
     </div>
 
     <?php require ROOT_PATH.'/includes/footer.inc.php' ?>

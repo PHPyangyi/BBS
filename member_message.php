@@ -52,7 +52,7 @@
 
 
     //page
-    page("SELECT COUNT(tg_id) as NUM  FROM tg_message WHERE tg_touser='{$_COOKIE['username']}' ",10);
+    page("SELECT COUNT(tg_id) as NUM  FROM tg_message WHERE tg_touser='{$_COOKIE['username']}' ",$system['article']);
     $result=query("SELECT
                                 tg_id,tg_state,tg_fromuser,tg_content,tg_date
                         FROM
@@ -70,7 +70,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--短信列表</title>
+    <title><?php echo $system['webname'] ?>--短信列表</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/member_message.js"></script>
 </head>

@@ -11,7 +11,9 @@
     require dirname(__FILE__).'/includes/common.inc.php';
     loginState();
     if (@$_GET['action'] == 'login') {
-        checkCode($_POST['code'],$_SESSION['code']);
+        if (!empty($system['code'])) {
+            checkCode($_POST['code'], $_SESSION['code']);
+        }
         include ROOT_PATH.'includes/check_func.php';
         $clean=array();
         $clean['username'] = checkUsername($_POST['username'],2,20);
@@ -50,7 +52,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--登录</title>
+    <title><?php echo $system['webname'] ?>--登录</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/login.js"></script>
 </head>
@@ -64,7 +66,9 @@
                 <dd>用 户 名 ：<input type="text" name="username" class="text" /></dd>
                 <dd>密　　码：<input type="password" name="password" class="text" /></dd>
                 <dd>保　　留：<input type="radio" name="time" value="0" checked="checked" /> 不保留 <input type="radio" name="time" value="1" /> 一天 <input type="radio" name="time" value="2" /> 一周 <input type="radio" name="time" value="3" /> 一月</dd>
+                <?php if (!empty($system['code'])) {?>
                 <dd>验 证 码：<input type="text" name="code" class="text code"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+                <?php }?>
                 <dd><input type="submit" value="登录" class="button" /> <input type="button" value="注册" id="location" class="button location" /></dd>
             </dl>
         </form>

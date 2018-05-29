@@ -14,7 +14,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统-后台管理中心</title>
+    <title><?php echo $system['webname'] ?>-后台管理中心</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
 </head>
 <body>
@@ -30,7 +30,6 @@
                 <dd>·客户端IP：<?php echo $_SERVER["REMOTE_ADDR"]; ?></dd>
                 <dd>·服务器端口：<?php echo $_SERVER['SERVER_PORT']; ?></dd>
                 <dd>·客户端端口：<?php echo $_SERVER["REMOTE_PORT"]; ?></dd>
-                <dd>·管理员邮箱：<?php echo $_SERVER['SERVER_ADMIN'] ?></dd>
                 <dd>·Host头部的内容：<?php echo $_SERVER['HTTP_HOST']; ?></dd>
                 <dd>·服务器主目录：<?php echo $_SERVER["DOCUMENT_ROOT"]; ?></dd>
                 <dd>·Apache及PHP版本：<?php echo $_SERVER["SERVER_SOFTWARE"]; ?></dd>

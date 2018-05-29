@@ -57,7 +57,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--花朵列表</title>
+    <title><?php echo $system['webname'] ?>--花朵列表</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/member_message.js"></script>
 </head>

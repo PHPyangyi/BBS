@@ -12,7 +12,9 @@
     //update
     if (@$_GET['action'] == 'modify') {
         include ROOT_PATH.'includes/check_func.php';
-        checkCode($_POST['code'],$_SESSION['code']);
+        if (!empty($system['code'])) {
+            checkCode($_POST['code'], $_SESSION['code']);
+        }
         if ($rows = fetchArray("SELECT tg_uniqid FROM tg_user WHERE tg_username='{$_COOKIE['username']}' LIMIT 1  ")) {
             checkUniqid($rows['tg_uniqid'],$_COOKIE['uniqid']);
             $clean = array();
@@ -132,7 +134,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--个人中心</title>
+    <title><?php echo $system['webname'] ?>--个人中心</title>
     <?php require ROOT_PATH.'includes/title.inc.php'; ?>
     <script type="text/javascript" src="js/member_modify.js"></script>
 </head>
@@ -154,7 +156,9 @@
                     <dd>个性签名：<?php echo $html['switch_html']?>(可以使用html标签)
                         <p><textarea name="autograph"><?php echo $html['autograph']?></textarea></p>
                     </dd>
-                    <dd>验 证 码：<input type="text" name="code" class="text yzm"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+                    <?php if (!empty($system['code'])) {?>
+                        <dd>验 证 码：<input type="text" name="code" class="text code"  /> <img src="code.php" id="code" onclick="this.src='code.php?tm='+Math.random() " /></dd>
+                    <?php }?>
                     <dd><input type="submit" class="submit" value="修改资料" /></dd>
                 </dl>
             </form>

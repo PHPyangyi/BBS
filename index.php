@@ -10,7 +10,7 @@
     require  dirname(__FILE__).'/includes/common.inc.php';
 
     //帖子列表
-    page("SELECT COUNT(tg_id) as NUM  FROM tg_article  ",10);
+    page("SELECT COUNT(tg_id) as NUM  FROM tg_article  WHERE  tg_reid='0'   ",$system['article']);
     $result=query("SELECT 
                                 *
                         FROM
@@ -33,7 +33,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>多用户留言系统--首页</title>
+    <title><?php echo $system['webname'] ?>--首页</title>
     <?php require ROOT_PATH.'/includes/title.inc.php' ?>
     <script type="text/javascript" src="js/blog.js"></script>
 </head>
