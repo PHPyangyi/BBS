@@ -89,6 +89,11 @@
         $system['register'] = $rows['tg_register'];
         $system['string'] = $rows['tg_string'];
         $system = Html($system);
+
+        //如果有skin的cookie那么就替代系统数据库的皮肤
+        if (@$_COOKIE['skin']) {
+            $system['skin'] = $_COOKIE['skin'];
+        }
     } else {
         exit('系统表异常，请管理员检查！');
     }

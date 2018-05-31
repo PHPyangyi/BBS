@@ -12,5 +12,5 @@
          exit('error');
     }
 ?>
-<link rel="stylesheet" href="css/1/basic.css">
-<link rel="stylesheet" type="text/css" href="css/1/<?php echo SCRIPT?>.css" />
+<link rel="stylesheet" type="text/css" href="css/<?php echo $system['skin']?>/basic.css" />
+<link rel="stylesheet" type="text/css" href="css/<?php echo $system['skin']?>/<?php echo SCRIPT?>.css" />

@@ -28,14 +28,31 @@
     //可采用xml
     $vip=fetchArray("SELECT * FROM tg_user ORDER BY  tg_reg_time DESC  LIMIT 1 ");
 
+    //photo
+    //最新图片,找到时间点最后上传的那张图片，并且是非公开的
+    $photo = fetchArray("SELECT
+															tg_id AS id,
+															tg_name AS name,
+															tg_url AS url 
+												FROM 
+															tg_photo 
+											WHERE
+															tg_sid in (SELECT tg_id FROM tg_dir WHERE tg_type=0)
+										ORDER BY 
+															tg_date DESC 
+												LIMIT 
+															1
+");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title><?php echo $system['webname'] ?>--首页</title>
-    <?php require ROOT_PATH.'/includes/title.inc.php' ?>
     <script type="text/javascript" src="js/blog.js"></script>
+    <?php require ROOT_PATH.'/includes/title.inc.php' ?>
+
 </head>
 <body>
 
@@ -77,12 +94,9 @@
     </div>
 
     <div id="pics">
-        <h2>最新图片</h2>
+        <h2>最新图片 -- <?php echo $photo['name']?></h2>
+        <a href="photo_detail.php?id=<?php echo $photo['id']?>"><img src="thumb.php?filename=<?php echo $photo['url']?>&percent=0.4" alt="<?php echo $photo['name']?>" style="width: 320px;height: 200px;margin: auto;display: block"   /></a>
     </div>
-
     <?php require ROOT_PATH.'/includes/footer.inc.php'?>
-
-
-
 </body>
 </html>
