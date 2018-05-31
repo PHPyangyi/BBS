@@ -9,6 +9,81 @@
     define('IN_TG',true);
     define('SCRIPT','photo_add_dir');
     require dirname(__FILE__).'/includes/common.inc.php';
+
+    if (@$_GET['action'] == 'adddir') {
+        include ROOT_PATH.'includes/check_func.php';
+        if (!!$rows = fetchArray("SELECT 
+                                                                    tg_uniqid 
+                                                        FROM 
+                                                                    tg_user 
+                                                     WHERE 
+                                                                    tg_username='{$_COOKIE['username']}' 
+                                                         LIMIT 
+                                                                    1"
+        )) {
+            checkUniqid($rows['tg_uniqid'], $_COOKIE['uniqid']);
+            $clean=array();
+            //这里验证就不做了
+            $clean['name'] = $_POST['name'];
+            $clean['type'] = $_POST['type'];
+            $clean['password'] = sha1($_POST['password']);
+            $clean['content'] = $_POST['content'];
+            $clean['dir'] = time();
+            $clean = mysqlString($clean);
+            if (!file_exists('photo')) {
+                mkdir('photo',0777);
+            }
+
+            if (!file_exists('photo/'.$clean['dir'])) {
+                mkdir('photo/'.$clean['dir']);
+            }
+            if (empty($clean['type'])) {
+                query("INSERT INTO tg_dir (
+																tg_name,
+																tg_type,
+																tg_content,
+																tg_dir,
+																tg_date
+															)
+											 VALUES (
+																'{$clean['name']}',
+																'{$clean['type']}',
+																'{$clean['content']}',
+																'photo/{$clean['dir']}',
+																NOW()
+											 				)
+			");
+            } else {
+                query("INSERT INTO tg_dir (
+																tg_name,
+																tg_type,
+																tg_content,
+																tg_dir,
+																tg_date,
+																tg_password
+															)
+											 VALUES (
+																'{$clean['name']}',
+																'{$clean['type']}',
+																'{$clean['content']}',
+																'photo/{$clean['dir']}',
+																NOW(),
+																'{$clean['password']}'
+											 				)
+			");
+            }
+            if (affectedRow() == 1) {
+                mysqlClose();
+                alertLocation('目录添加成功','photo.php');
+            } else {
+                mysqlClose();
+                alertBack('目录添加失败！');
+            }
+
+
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
