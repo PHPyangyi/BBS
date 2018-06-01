@@ -29,14 +29,17 @@ h2 {
     font-size:12px;
     width:210px;
     height:39px;
-    background:url(../../images/logo1.jpg) no-repeat;
+
     margin:50px 0 0 50px;
 }
 #header h1 a {
-    width:210px;
-    height:39px;
+    width:380px;
+    height:50px;
     display:block;
-    text-indent:-9999px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: 华文仿宋;
 }
 #header ul {
     text-align:right;
