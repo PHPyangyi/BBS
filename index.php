@@ -83,7 +83,7 @@
         <h2>新进会员</h2>
         <dl>
             <dd class="user"><?php echo $vip['tg_username']?>(<?php echo $vip['tg_sex']?>)</dd>
-            <dt><img src="<?php echo $vip['tg_face']?>" alt="<?php echo $html['tg_username']?>" /></dt>
+            <dt><img src="<?php echo $vip['tg_face']?>" alt="<?php echo @$html['tg_username']?>" /></dt>
             <dd class="message"><a href="javascript:;" name="message" title="<?php echo $vip['tg_id']?>">发消息</a></dd>
             <dd class="friend"><a href="javascript:;" name="friend" title="<?php echo $vip['tg_id']?>">加为好友</a></dd>
             <dd class="guest">写留言</dd>
